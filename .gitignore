@@ -14,6 +14,7 @@ vignettes/*.pdf
 
 *ruberic.xlsx
 .DS_Store
+*.html
 
 UCI HAR Dataset
 Dataset.zip

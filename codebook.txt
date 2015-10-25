@@ -1,0 +1,38 @@
+The *_data.txt files all use a similar format.
+Column names are enumerated in subject_labels.txt
+
+This is a data reduction, the original codebook holds the details
+for the columnar specifics.
+Original codebook information:
+"http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones"
+Original dataset location:
+"https://d396qusza40orc.cloudfront.net/getdata/projectfiles/UCI HAR Dataset.zip"
+
+## subject_data.txt
+# Column 1 (subject)
+This contains the subject ID, a value from 1 to 30
+
+# Column 2 (activity)
+This is descriptive text indicating the activity type, levels are:
+"LAYING"
+"SITTING"
+"STANDING"
+"WALKING"
+"WALKING_DOWNSTAIRS"
+"WALKING_UPSTAIRS"
+
+Note: not every subject has participated in every activity.
+
+# Columns 3:68
+These are the columns further described in subject_labels.txt.
+The extracted columns from the original data set are mean() and
+std() columns.  They contain observation values for the subject:activity
+tuple, as such multiple entries for each tuple occur.
+
+
+## average_data.txt
+Column information is as above with the following change:
+There exists only 1 instance of each subject:activity tuple. The
+remaining columns are the _mean_ of the rows that match that tuple
+in the subject_data.txt data set.
+
